@@ -1,9 +1,98 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Spotlight</title>
+    <link href="./src/output.css" rel="stylesheet" />
   </head>
-  <body></body>
+  <body>
+    <div class="overflow-x-hidden">
+      <!-- header -->
+      <div>
+        <div
+          class="flex flex-row items-center justify-between bg-[#151083] w-full h-[132px]"
+        >
+          <!-- navigation bar -->
+          <div
+            class="flex flex-row items-center justify-between w-[95%] lg:w-[85%] mx-2 md:mx-8 lg:mx-auto"
+          >
+            <!-- Left Section -->
+            <div class="flex flex-row gap-[48px] text-[#D0D3DA]">
+              <!-- logo -->
+              <div class="flex items-center w-[171.38px] cursor-pointer">
+                <img src="/assets/spotlight-logo.png" alt="spotlight logo" />
+              </div>
+              <!-- line -->
+              <div
+                class="hidden md:block w-[1px] h-[48px] bg-[#677395] items-center justify-center"
+              ></div>
+              <!-- navigation links -->
+              <div
+                class="nav-links lg:static lg:min-h-fit flex flex-col items-center justify-center absolute bg-[#151083] min-h-[40vh] left-0 top-[-100%] lg:w-auto w-full"
+              >
+                <ul
+                  class="flex lg:flex-row flex-col lg:items-center text-base leading-4 font-medium gap-10"
+                >
+                  <li>
+                    <a class="hover:text-gray-400" href="#">All Projects</a>
+                  </li>
+                  <li><a class="hover:text-gray-400" href="#">About Us</a></li>
+                  <li>
+                    <a class="hover:text-gray-400" href="#">Start Project</a>
+                  </li>
+                </ul>
+                <button
+                  class="md:hidden block items-center justify-center mt-8 text-[14px] leading-4 w-24 h-10 border-2 border-[#777E90] rounded-xl"
+                >
+                  Login
+                </button>
+              </div>
+            </div>
+
+            <!-- Right Section -->
+            <div
+              class="flex flex-row items-center gap-4 lg:gap-[36px] text-[#FCFCFD]"
+            >
+              <button
+                class="hidden md:block items-center justify-center text-[14px] leading-4 w-16 h-10 border-2 border-[#777E90] rounded-xl"
+              >
+                Login
+              </button>
+              <button
+                class="flex items-center justify-center text-[14px] leading-4 w-[132px] bg-gradient-to-r from-[#4489FC] to-[#2B5FFE] h-10 rounded-xl"
+              >
+                Create Account
+              </button>
+              <ion-icon
+                onclick="onToggleMenu(this)"
+                class="flex items-center text-[40px] cursor-pointer lg:hidden"
+                name="menu-outline"
+              ></ion-icon>
+            </div>
+          </div>
+        </div>
+
+        <!-- Header background -->
+        <div
+          class="w-full h-[830px] bg-[url('/assets/bg2.png')] bg-cover bg-center"
+        ></div>
+      </div>
+    </div>
+
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+    <script>
+      const navLinks = document.querySelector(".nav-links");
+      const onToggleMenu = (e) => {
+        e.name = e.name === "menu-outline" ? "close-outline" : "menu-outline";
+        navLinks.classList.toggle("top-[15%]");
+      };
+    </script>
+  </body>
 </html>
