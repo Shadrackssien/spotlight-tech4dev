@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link href="./src/output.css" rel="stylesheet" />
+    <script>document.documentElement.classList.add('js')</script>
   </head>
   <body>
     <div class="overflow-x-hidden bg-[#FBFAFF]">
@@ -81,7 +82,7 @@
             class="flex flex-col lg:flex-row justify-between pt-8 md:pt-12 lg:pt-24 w-[95%] lg:w-[84%] mx-2 md:mx-8 lg:mx-auto"
           >
             <!-- left section -->
-            <div class="mt-8 lg:mt-0">
+            <div class="mt-8 lg:mt-0 delay-[300ms] duration-[600ms] taos:scale-[0.6] taos:opacity-0" data-taos-offset="100">
               <!-- Invest description -->
               <div class="flex items-center lg:items-start flex-col gap-4">
                 <p class="ml-1 text-[#FFB49C] text-xs font-bold leading-4">
@@ -132,7 +133,7 @@
             </div>
             <!-- right section / Hero demo video/image -->
             <div
-              class="flex items-center justify-center lg:items-start mt-[53px]"
+              class="flex items-center justify-center lg:items-start mt-[53px] delay-[300ms] duration-[600ms] taos:[transform:translate3d(200px,0,0)_scale(0.6)] taos:opacity-0" data-taos-offset="100"
             >
               <img
                 class="flex items-center justify-center"
@@ -175,7 +176,7 @@
       <!-- Popular Projects Page -->
       <div class="mt-24 w-[92%] h-auto mx-auto">
         <!-- Title -->
-        <div class="flex flex-col justify-center items-center mx-4">
+        <div class="flex flex-col justify-center items-center mx-4 delay-[300ms] duration-[600ms] taos:translate-y-[-100%] taos:opacity-0" data-taos-offset="100">
           <p class="text-[#1D263A] text-5xl font-bold leading-[57.6px] mb-4">
             Popular Projects
           </p>
@@ -191,12 +192,12 @@
 
           <!-- King of the boys -->
           <div
-            class="flex flex-col w-full bg-[#FFFFFF] shadow-md shadow-[#8A869414] h-auto rounded-lg"
+            class="relative overflow-hidden flex flex-col w-full bg-[#FFFFFF] shadow-md shadow-[#8A869414] h-auto rounded-lg"
           >
             <!-- image -->
 
             <img
-              class="w-auto h-[39%] object-cover object-center rounded-t-lg"
+              class="w-auto h-[39%] object-cover object-center rounded-t-lg transition-all duration-300 ease-in-out hover:scale-[1.09]"
               src="/assets/king-of-boys.png"
               alt="king of the boys"
             />
@@ -224,7 +225,7 @@
               <!-- fundraising goal -->
               <div class="flex flex-row items-center mt-1 gap-4 border-b-[1px] pb-4 border-b-[#E8EEFD]">
                 <div>
-                  <img class="w-[37px] h-[37px]" src="/assets/funds.png" alt="funds icon">
+                  <img class="w-[40px] h-[40px]" src="/assets/funds.png" alt="funds icon">
                 </div>
                 <div >
                   <p class="font-light text-base text-[#777E90]">Fundraising Goal</p>
@@ -296,15 +297,14 @@
             </div>
           </div>
 
-
           <!-- Flint -->
           <div
-            class="flex flex-col w-full bg-[#FFFFFF] shadow-md shadow-[#8A869414] h-auto rounded-lg"
+            class="relative overflow-hidden scr flex flex-col w-full bg-[#FFFFFF] shadow-md shadow-[#8A869414] h-auto rounded-lg"
           >
             <!-- image -->
 
             <img
-              class="w-auto h-[39%] object-cover object-center rounded-t-lg"
+              class="w-auto h-[39%] object-cover object-center rounded-t-lg transition-all duration-300 ease-in-out hover:scale-[1.09]"
               src="/assets/flint.png"
               alt="king of the boys"
             />
@@ -332,7 +332,649 @@
               <!-- fundraising goal -->
               <div class="flex flex-row items-center mt-1 gap-4 border-b-[1px] pb-4 border-b-[#E8EEFD]">
                 <div>
-                  <img class="w-[37px] h-[37px]" src="/assets/funds.png" alt="funds icon">
+                  <img class="w-[40px] h-[40px]" src="/assets/funds.png" alt="funds icon">
+                </div>
+                <div >
+                  <p class="font-light text-base text-[#777E90]">Fundraising Goal</p>
+                  <p class="font-bold text-xl">ETH 592,000,000</p>
+                </div>
+              </div>
+
+              <!-- middle section -->
+              <div class="flex flex-col gap-4">
+                <div class="flex flex-col gap-2">
+                  <div class="flex flex-row items-center gap-2">
+                    <img class="w-[12px] h-[12px]" src="/assets/tick.png" alt="tick">
+                    <p class="font-normal text-sm text-[#363636]">Participate via:</p>
+                  </div>
+                  <div class="ml-5 flex flex-row items-center gap-4">
+                    <div class="flex flex-row items-center gap-2 w-auto h-[16.1px] p-3 border-[0.62px] border-[#D1D5DB] rounded-full">
+                      <p class="bg-[#F2994A] w-[5px] h-[5px] rounded-full"></p>
+                      <p class="font-medium text-sm">BTC</p>
+                    </div>
+                    <div class="flex flex-row items-center gap-2 w-auto h-[16.1px] p-3 border-[0.62px] border-[#D1D5DB] rounded-full">
+                      <p class="bg-[#627EEA] w-[5px] h-[5px] rounded-full"></p>
+                      <p class="font-medium text-sm">ETH</p>
+                    </div>
+                    <div class="flex flex-row items-center gap-2 w-auto h-[16.1px] p-3 border-[0.62px] border-[#D1D5DB] rounded-full">
+                      <p class="bg-[#F3BA2F] w-[5px] h-[5px] rounded-full"></p>
+                      <p class="font-medium text-sm">BNB</p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="flex flex-row items-center gap-2">
+                  <img class="w-[12px] h-[12px]" src="/assets/tick.png" alt="tick">
+                    <div class="flex flex-row items-center gap-2">
+                      <p class="text-[#363636] font-bold text-base">Hardcap:</p>
+                      <p>ETH 30,000,000</p>
+                    </div>
+                </div>
+
+                <div class="flex flex-row items-center justify-between gap-2 border-b-[1px] pb-4 border-b-[#E8EEFD]">
+                  <div class="flex flex-row items-center gap-2">
+                    <img class="w-[12px] h-[12px]" src="/assets/tick.png" alt="tick">
+                    <div class="flex flex-row items-center gap-2">
+                      <p class="font-bold text-base">Token - </p>
+                      <p class="text-[#DC562B] font-bold">$KOB</p>
+                    </div>
+                  </div>
+
+                  <div class="flex flex-row items-center gap-2">
+                    <img class="w-[12px] h-[12px]" src="/assets/tick.png" alt="tick">
+                    <div class="flex flex-row items-center gap-2">
+                      <p class="font-bold text-base">Stage:</p>
+                      <p>Presale</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- kemi and location -->
+              <div class="flex flex-row items-center justify-between">
+                <div class="flex flex-row items-center gap-2">
+                  <img class="w-[25px] h-[25px] rounded-full" src="/assets/dp.png" alt="dp">
+                  <p class="text-[#1D263A] font-bold">Kemi Adetiba</p>
+                </div>
+                <div class="flex flex-row items-center gap-2">
+                  <img src="/assets/location.png" alt="location">
+                  <p>Dubai, UAE</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- King of the boys -->
+          <div
+            class="relative overflow-hidden flex flex-col w-full bg-[#FFFFFF] shadow-md shadow-[#8A869414] h-auto rounded-lg"
+          >
+            <!-- image -->
+
+            <img
+              class="w-auto h-[39%] object-cover object-center rounded-t-lg transition-all duration-300 ease-in-out hover:scale-[1.09]"
+              src="/assets/king-of-boys.png"
+              alt="king of the boys"
+            />
+
+            <!-- Description -->
+            <div class="flex flex-col gap-4 p-4">
+              <!-- head section -->
+              <div class="flex flex-row justify-between mt-4">
+                <div class="flex flex-col gap-4">
+                  <p class="w-20 flex items-center justify-center rounded-3xl h-auto border-[#FBA286] border-1 bg-[#EF466F] p-1 text-[#FCFCFD] font-normal text-sm">Drama</p>
+                  <p class="font-bold text-3xl">King of Boys</p>
+                </div>
+                <div class="flex flex-col items-center bg-[#FFD0B6A6] p-2 rounded-xl">
+                  <p class="font-bold text-2xl text-[#DC562B] pt-2">25</p>
+                  <p class="text-[#DC562B] text-xs">Days left</p>
+                </div>
+              </div>
+
+              <p class="text-[#545A66] font-light text-sm">
+                King of Boys follows the story of Alhaja Eniola Salami, a
+                businesswoman and philanthropist with a checkered past and a
+                promising political future.
+              </p>
+
+              <!-- fundraising goal -->
+              <div class="flex flex-row items-center mt-1 gap-4 border-b-[1px] pb-4 border-b-[#E8EEFD]">
+                <div>
+                  <img class="w-[40px] h-[40px]" src="/assets/funds.png" alt="funds icon">
+                </div>
+                <div >
+                  <p class="font-light text-base text-[#777E90]">Fundraising Goal</p>
+                  <p class="font-bold text-xl">ETH 592,000,000</p>
+                </div>
+              </div>
+
+              <!-- middle section -->
+              <div class="flex flex-col gap-4">
+                <div class="flex flex-col gap-2">
+                  <div class="flex flex-row items-center gap-2">
+                    <img class="w-[12px] h-[12px]" src="/assets/tick.png" alt="tick">
+                    <p class="font-normal text-sm text-[#363636]">Participate via:</p>
+                  </div>
+                  <div class="ml-5 flex flex-row items-center gap-4">
+                    <div class="flex flex-row items-center gap-2 w-auto h-[16.1px] p-3 border-[0.62px] border-[#D1D5DB] rounded-full">
+                      <p class="bg-[#F2994A] w-[5px] h-[5px] rounded-full"></p>
+                      <p class="font-medium text-sm">BTC</p>
+                    </div>
+                    <div class="flex flex-row items-center gap-2 w-auto h-[16.1px] p-3 border-[0.62px] border-[#D1D5DB] rounded-full">
+                      <p class="bg-[#627EEA] w-[5px] h-[5px] rounded-full"></p>
+                      <p class="font-medium text-sm">ETH</p>
+                    </div>
+                    <div class="flex flex-row items-center gap-2 w-auto h-[16.1px] p-3 border-[0.62px] border-[#D1D5DB] rounded-full">
+                      <p class="bg-[#F3BA2F] w-[5px] h-[5px] rounded-full"></p>
+                      <p class="font-medium text-sm">BNB</p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="flex flex-row items-center gap-2">
+                  <img class="w-[12px] h-[12px]" src="/assets/tick.png" alt="tick">
+                    <div class="flex flex-row items-center gap-2">
+                      <p class="text-[#363636] font-bold text-base">Hardcap:</p>
+                      <p>ETH 30,000,000</p>
+                    </div>
+                </div>
+
+                <div class="flex flex-row items-center justify-between gap-2 border-b-[1px] pb-4 border-b-[#E8EEFD]">
+                  <div class="flex flex-row items-center gap-2">
+                    <img class="w-[12px] h-[12px]" src="/assets/tick.png" alt="tick">
+                    <div class="flex flex-row items-center gap-2">
+                      <p class="font-bold text-base">Token - </p>
+                      <p class="text-[#DC562B] font-bold">$KOB</p>
+                    </div>
+                  </div>
+
+                  <div class="flex flex-row items-center gap-2">
+                    <img class="w-[12px] h-[12px]" src="/assets/tick.png" alt="tick">
+                    <div class="flex flex-row items-center gap-2">
+                      <p class="font-bold text-base">Stage:</p>
+                      <p>Presale</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- kemi and location -->
+              <div class="flex flex-row items-center justify-between">
+                <div class="flex flex-row items-center gap-2">
+                  <img class="w-[25px] h-[25px] rounded-full" src="/assets/dp.png" alt="dp">
+                  <p class="text-[#1D263A] font-bold">Kemi Adetiba</p>
+                </div>
+                <div class="flex flex-row items-center gap-2">
+                  <img src="/assets/location.png" alt="location">
+                  <p>Dubai, UAE</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Flint -->
+          <div
+            class="relative overflow-hidden scr flex flex-col w-full bg-[#FFFFFF] shadow-md shadow-[#8A869414] h-auto rounded-lg"
+          >
+            <!-- image -->
+
+            <img
+              class="w-auto h-[39%] object-cover object-center rounded-t-lg transition-all duration-300 ease-in-out hover:scale-[1.09]"
+              src="/assets/flint.png"
+              alt="king of the boys"
+            />
+
+            <!-- Description -->
+            <div class="flex flex-col gap-4 p-4">
+              <!-- head section -->
+              <div class="flex flex-row justify-between mt-4">
+                <div class="flex flex-col gap-4">
+                  <p class="w-28 flex items-center justify-center rounded-3xl h-auto border-[#FBA286] border-1 bg-[#46B2EF] p-1 text-[#FCFCFD] font-normal text-sm">Soap Opera</p>
+                  <p class="font-bold text-3xl">Flint</p>
+                </div>
+                <div class="flex flex-col items-center bg-[#FFD0B6A6] p-2 rounded-xl">
+                  <p class="font-bold text-2xl text-[#DC562B] pt-2">25</p>
+                  <p class="text-[#DC562B] text-xs">Days left</p>
+                </div>
+              </div>
+
+              <p class="text-[#545A66] font-light text-sm">
+                King of Boys follows the story of Alhaja Eniola Salami, a
+                businesswoman and philanthropist with a checkered past and a
+                promising political future.
+              </p>
+
+              <!-- fundraising goal -->
+              <div class="flex flex-row items-center mt-1 gap-4 border-b-[1px] pb-4 border-b-[#E8EEFD]">
+                <div>
+                  <img class="w-[40px] h-[40px]" src="/assets/funds.png" alt="funds icon">
+                </div>
+                <div >
+                  <p class="font-light text-base text-[#777E90]">Fundraising Goal</p>
+                  <p class="font-bold text-xl">ETH 592,000,000</p>
+                </div>
+              </div>
+
+              <!-- middle section -->
+              <div class="flex flex-col gap-4">
+                <div class="flex flex-col gap-2">
+                  <div class="flex flex-row items-center gap-2">
+                    <img class="w-[12px] h-[12px]" src="/assets/tick.png" alt="tick">
+                    <p class="font-normal text-sm text-[#363636]">Participate via:</p>
+                  </div>
+                  <div class="ml-5 flex flex-row items-center gap-4">
+                    <div class="flex flex-row items-center gap-2 w-auto h-[16.1px] p-3 border-[0.62px] border-[#D1D5DB] rounded-full">
+                      <p class="bg-[#F2994A] w-[5px] h-[5px] rounded-full"></p>
+                      <p class="font-medium text-sm">BTC</p>
+                    </div>
+                    <div class="flex flex-row items-center gap-2 w-auto h-[16.1px] p-3 border-[0.62px] border-[#D1D5DB] rounded-full">
+                      <p class="bg-[#627EEA] w-[5px] h-[5px] rounded-full"></p>
+                      <p class="font-medium text-sm">ETH</p>
+                    </div>
+                    <div class="flex flex-row items-center gap-2 w-auto h-[16.1px] p-3 border-[0.62px] border-[#D1D5DB] rounded-full">
+                      <p class="bg-[#F3BA2F] w-[5px] h-[5px] rounded-full"></p>
+                      <p class="font-medium text-sm">BNB</p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="flex flex-row items-center gap-2">
+                  <img class="w-[12px] h-[12px]" src="/assets/tick.png" alt="tick">
+                    <div class="flex flex-row items-center gap-2">
+                      <p class="text-[#363636] font-bold text-base">Hardcap:</p>
+                      <p>ETH 30,000,000</p>
+                    </div>
+                </div>
+
+                <div class="flex flex-row items-center justify-between gap-2 border-b-[1px] pb-4 border-b-[#E8EEFD]">
+                  <div class="flex flex-row items-center gap-2">
+                    <img class="w-[12px] h-[12px]" src="/assets/tick.png" alt="tick">
+                    <div class="flex flex-row items-center gap-2">
+                      <p class="font-bold text-base">Token - </p>
+                      <p class="text-[#DC562B] font-bold">$KOB</p>
+                    </div>
+                  </div>
+
+                  <div class="flex flex-row items-center gap-2">
+                    <img class="w-[12px] h-[12px]" src="/assets/tick.png" alt="tick">
+                    <div class="flex flex-row items-center gap-2">
+                      <p class="font-bold text-base">Stage:</p>
+                      <p>Presale</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- kemi and location -->
+              <div class="flex flex-row items-center justify-between">
+                <div class="flex flex-row items-center gap-2">
+                  <img class="w-[25px] h-[25px] rounded-full" src="/assets/dp.png" alt="dp">
+                  <p class="text-[#1D263A] font-bold">Kemi Adetiba</p>
+                </div>
+                <div class="flex flex-row items-center gap-2">
+                  <img src="/assets/location.png" alt="location">
+                  <p>Dubai, UAE</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- King of the boys -->
+          <div
+            class="relative overflow-hidden flex flex-col w-full bg-[#FFFFFF] shadow-md shadow-[#8A869414] h-auto rounded-lg"
+          >
+            <!-- image -->
+
+            <img
+              class="w-auto h-[39%] object-cover object-center rounded-t-lg transition-all duration-300 ease-in-out hover:scale-[1.09]"
+              src="/assets/king-of-boys.png"
+              alt="king of the boys"
+            />
+
+            <!-- Description -->
+            <div class="flex flex-col gap-4 p-4">
+              <!-- head section -->
+              <div class="flex flex-row justify-between mt-4">
+                <div class="flex flex-col gap-4">
+                  <p class="w-20 flex items-center justify-center rounded-3xl h-auto border-[#FBA286] border-1 bg-[#EF466F] p-1 text-[#FCFCFD] font-normal text-sm">Drama</p>
+                  <p class="font-bold text-3xl">King of Boys</p>
+                </div>
+                <div class="flex flex-col items-center bg-[#FFD0B6A6] p-2 rounded-xl">
+                  <p class="font-bold text-2xl text-[#DC562B] pt-2">25</p>
+                  <p class="text-[#DC562B] text-xs">Days left</p>
+                </div>
+              </div>
+
+              <p class="text-[#545A66] font-light text-sm">
+                King of Boys follows the story of Alhaja Eniola Salami, a
+                businesswoman and philanthropist with a checkered past and a
+                promising political future.
+              </p>
+
+              <!-- fundraising goal -->
+              <div class="flex flex-row items-center mt-1 gap-4 border-b-[1px] pb-4 border-b-[#E8EEFD]">
+                <div>
+                  <img class="w-[40px] h-[40px]" src="/assets/funds.png" alt="funds icon">
+                </div>
+                <div >
+                  <p class="font-light text-base text-[#777E90]">Fundraising Goal</p>
+                  <p class="font-bold text-xl">ETH 592,000,000</p>
+                </div>
+              </div>
+
+              <!-- middle section -->
+              <div class="flex flex-col gap-4">
+                <div class="flex flex-col gap-2">
+                  <div class="flex flex-row items-center gap-2">
+                    <img class="w-[12px] h-[12px]" src="/assets/tick.png" alt="tick">
+                    <p class="font-normal text-sm text-[#363636]">Participate via:</p>
+                  </div>
+                  <div class="ml-5 flex flex-row items-center gap-4">
+                    <div class="flex flex-row items-center gap-2 w-auto h-[16.1px] p-3 border-[0.62px] border-[#D1D5DB] rounded-full">
+                      <p class="bg-[#F2994A] w-[5px] h-[5px] rounded-full"></p>
+                      <p class="font-medium text-sm">BTC</p>
+                    </div>
+                    <div class="flex flex-row items-center gap-2 w-auto h-[16.1px] p-3 border-[0.62px] border-[#D1D5DB] rounded-full">
+                      <p class="bg-[#627EEA] w-[5px] h-[5px] rounded-full"></p>
+                      <p class="font-medium text-sm">ETH</p>
+                    </div>
+                    <div class="flex flex-row items-center gap-2 w-auto h-[16.1px] p-3 border-[0.62px] border-[#D1D5DB] rounded-full">
+                      <p class="bg-[#F3BA2F] w-[5px] h-[5px] rounded-full"></p>
+                      <p class="font-medium text-sm">BNB</p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="flex flex-row items-center gap-2">
+                  <img class="w-[12px] h-[12px]" src="/assets/tick.png" alt="tick">
+                    <div class="flex flex-row items-center gap-2">
+                      <p class="text-[#363636] font-bold text-base">Hardcap:</p>
+                      <p>ETH 30,000,000</p>
+                    </div>
+                </div>
+
+                <div class="flex flex-row items-center justify-between gap-2 border-b-[1px] pb-4 border-b-[#E8EEFD]">
+                  <div class="flex flex-row items-center gap-2">
+                    <img class="w-[12px] h-[12px]" src="/assets/tick.png" alt="tick">
+                    <div class="flex flex-row items-center gap-2">
+                      <p class="font-bold text-base">Token - </p>
+                      <p class="text-[#DC562B] font-bold">$KOB</p>
+                    </div>
+                  </div>
+
+                  <div class="flex flex-row items-center gap-2">
+                    <img class="w-[12px] h-[12px]" src="/assets/tick.png" alt="tick">
+                    <div class="flex flex-row items-center gap-2">
+                      <p class="font-bold text-base">Stage:</p>
+                      <p>Presale</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- kemi and location -->
+              <div class="flex flex-row items-center justify-between">
+                <div class="flex flex-row items-center gap-2">
+                  <img class="w-[25px] h-[25px] rounded-full" src="/assets/dp.png" alt="dp">
+                  <p class="text-[#1D263A] font-bold">Kemi Adetiba</p>
+                </div>
+                <div class="flex flex-row items-center gap-2">
+                  <img src="/assets/location.png" alt="location">
+                  <p>Dubai, UAE</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Flint -->
+          <div
+            class="relative overflow-hidden scr flex flex-col w-full bg-[#FFFFFF] shadow-md shadow-[#8A869414] h-auto rounded-lg"
+          >
+            <!-- image -->
+
+            <img
+              class="w-auto h-[39%] object-cover object-center rounded-t-lg transition-all duration-300 ease-in-out hover:scale-[1.09]"
+              src="/assets/flint.png"
+              alt="king of the boys"
+            />
+
+            <!-- Description -->
+            <div class="flex flex-col gap-4 p-4">
+              <!-- head section -->
+              <div class="flex flex-row justify-between mt-4">
+                <div class="flex flex-col gap-4">
+                  <p class="w-28 flex items-center justify-center rounded-3xl h-auto border-[#FBA286] border-1 bg-[#46B2EF] p-1 text-[#FCFCFD] font-normal text-sm">Soap Opera</p>
+                  <p class="font-bold text-3xl">Flint</p>
+                </div>
+                <div class="flex flex-col items-center bg-[#FFD0B6A6] p-2 rounded-xl">
+                  <p class="font-bold text-2xl text-[#DC562B] pt-2">25</p>
+                  <p class="text-[#DC562B] text-xs">Days left</p>
+                </div>
+              </div>
+
+              <p class="text-[#545A66] font-light text-sm">
+                King of Boys follows the story of Alhaja Eniola Salami, a
+                businesswoman and philanthropist with a checkered past and a
+                promising political future.
+              </p>
+
+              <!-- fundraising goal -->
+              <div class="flex flex-row items-center mt-1 gap-4 border-b-[1px] pb-4 border-b-[#E8EEFD]">
+                <div>
+                  <img class="w-[40px] h-[40px]" src="/assets/funds.png" alt="funds icon">
+                </div>
+                <div >
+                  <p class="font-light text-base text-[#777E90]">Fundraising Goal</p>
+                  <p class="font-bold text-xl">ETH 592,000,000</p>
+                </div>
+              </div>
+
+              <!-- middle section -->
+              <div class="flex flex-col gap-4">
+                <div class="flex flex-col gap-2">
+                  <div class="flex flex-row items-center gap-2">
+                    <img class="w-[12px] h-[12px]" src="/assets/tick.png" alt="tick">
+                    <p class="font-normal text-sm text-[#363636]">Participate via:</p>
+                  </div>
+                  <div class="ml-5 flex flex-row items-center gap-4">
+                    <div class="flex flex-row items-center gap-2 w-auto h-[16.1px] p-3 border-[0.62px] border-[#D1D5DB] rounded-full">
+                      <p class="bg-[#F2994A] w-[5px] h-[5px] rounded-full"></p>
+                      <p class="font-medium text-sm">BTC</p>
+                    </div>
+                    <div class="flex flex-row items-center gap-2 w-auto h-[16.1px] p-3 border-[0.62px] border-[#D1D5DB] rounded-full">
+                      <p class="bg-[#627EEA] w-[5px] h-[5px] rounded-full"></p>
+                      <p class="font-medium text-sm">ETH</p>
+                    </div>
+                    <div class="flex flex-row items-center gap-2 w-auto h-[16.1px] p-3 border-[0.62px] border-[#D1D5DB] rounded-full">
+                      <p class="bg-[#F3BA2F] w-[5px] h-[5px] rounded-full"></p>
+                      <p class="font-medium text-sm">BNB</p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="flex flex-row items-center gap-2">
+                  <img class="w-[12px] h-[12px]" src="/assets/tick.png" alt="tick">
+                    <div class="flex flex-row items-center gap-2">
+                      <p class="text-[#363636] font-bold text-base">Hardcap:</p>
+                      <p>ETH 30,000,000</p>
+                    </div>
+                </div>
+
+                <div class="flex flex-row items-center justify-between gap-2 border-b-[1px] pb-4 border-b-[#E8EEFD]">
+                  <div class="flex flex-row items-center gap-2">
+                    <img class="w-[12px] h-[12px]" src="/assets/tick.png" alt="tick">
+                    <div class="flex flex-row items-center gap-2">
+                      <p class="font-bold text-base">Token - </p>
+                      <p class="text-[#DC562B] font-bold">$KOB</p>
+                    </div>
+                  </div>
+
+                  <div class="flex flex-row items-center gap-2">
+                    <img class="w-[12px] h-[12px]" src="/assets/tick.png" alt="tick">
+                    <div class="flex flex-row items-center gap-2">
+                      <p class="font-bold text-base">Stage:</p>
+                      <p>Presale</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- kemi and location -->
+              <div class="flex flex-row items-center justify-between">
+                <div class="flex flex-row items-center gap-2">
+                  <img class="w-[25px] h-[25px] rounded-full" src="/assets/dp.png" alt="dp">
+                  <p class="text-[#1D263A] font-bold">Kemi Adetiba</p>
+                </div>
+                <div class="flex flex-row items-center gap-2">
+                  <img src="/assets/location.png" alt="location">
+                  <p>Dubai, UAE</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- King of the boys -->
+          <div
+            class="relative overflow-hidden flex flex-col w-full bg-[#FFFFFF] shadow-md shadow-[#8A869414] h-auto rounded-lg"
+          >
+            <!-- image -->
+
+            <img
+              class="w-auto h-[39%] object-cover object-center rounded-t-lg transition-all duration-300 ease-in-out hover:scale-[1.09]"
+              src="/assets/king-of-boys.png"
+              alt="king of the boys"
+            />
+
+            <!-- Description -->
+            <div class="flex flex-col gap-4 p-4">
+              <!-- head section -->
+              <div class="flex flex-row justify-between mt-4">
+                <div class="flex flex-col gap-4">
+                  <p class="w-20 flex items-center justify-center rounded-3xl h-auto border-[#FBA286] border-1 bg-[#EF466F] p-1 text-[#FCFCFD] font-normal text-sm">Drama</p>
+                  <p class="font-bold text-3xl">King of Boys</p>
+                </div>
+                <div class="flex flex-col items-center bg-[#FFD0B6A6] p-2 rounded-xl">
+                  <p class="font-bold text-2xl text-[#DC562B] pt-2">25</p>
+                  <p class="text-[#DC562B] text-xs">Days left</p>
+                </div>
+              </div>
+
+              <p class="text-[#545A66] font-light text-sm">
+                King of Boys follows the story of Alhaja Eniola Salami, a
+                businesswoman and philanthropist with a checkered past and a
+                promising political future.
+              </p>
+
+              <!-- fundraising goal -->
+              <div class="flex flex-row items-center mt-1 gap-4 border-b-[1px] pb-4 border-b-[#E8EEFD]">
+                <div>
+                  <img class="w-[40px] h-[40px]" src="/assets/funds.png" alt="funds icon">
+                </div>
+                <div >
+                  <p class="font-light text-base text-[#777E90]">Fundraising Goal</p>
+                  <p class="font-bold text-xl">ETH 592,000,000</p>
+                </div>
+              </div>
+
+              <!-- middle section -->
+              <div class="flex flex-col gap-4">
+                <div class="flex flex-col gap-2">
+                  <div class="flex flex-row items-center gap-2">
+                    <img class="w-[12px] h-[12px]" src="/assets/tick.png" alt="tick">
+                    <p class="font-normal text-sm text-[#363636]">Participate via:</p>
+                  </div>
+                  <div class="ml-5 flex flex-row items-center gap-4">
+                    <div class="flex flex-row items-center gap-2 w-auto h-[16.1px] p-3 border-[0.62px] border-[#D1D5DB] rounded-full">
+                      <p class="bg-[#F2994A] w-[5px] h-[5px] rounded-full"></p>
+                      <p class="font-medium text-sm">BTC</p>
+                    </div>
+                    <div class="flex flex-row items-center gap-2 w-auto h-[16.1px] p-3 border-[0.62px] border-[#D1D5DB] rounded-full">
+                      <p class="bg-[#627EEA] w-[5px] h-[5px] rounded-full"></p>
+                      <p class="font-medium text-sm">ETH</p>
+                    </div>
+                    <div class="flex flex-row items-center gap-2 w-auto h-[16.1px] p-3 border-[0.62px] border-[#D1D5DB] rounded-full">
+                      <p class="bg-[#F3BA2F] w-[5px] h-[5px] rounded-full"></p>
+                      <p class="font-medium text-sm">BNB</p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="flex flex-row items-center gap-2">
+                  <img class="w-[12px] h-[12px]" src="/assets/tick.png" alt="tick">
+                    <div class="flex flex-row items-center gap-2">
+                      <p class="text-[#363636] font-bold text-base">Hardcap:</p>
+                      <p>ETH 30,000,000</p>
+                    </div>
+                </div>
+
+                <div class="flex flex-row items-center justify-between gap-2 border-b-[1px] pb-4 border-b-[#E8EEFD]">
+                  <div class="flex flex-row items-center gap-2">
+                    <img class="w-[12px] h-[12px]" src="/assets/tick.png" alt="tick">
+                    <div class="flex flex-row items-center gap-2">
+                      <p class="font-bold text-base">Token - </p>
+                      <p class="text-[#DC562B] font-bold">$KOB</p>
+                    </div>
+                  </div>
+
+                  <div class="flex flex-row items-center gap-2">
+                    <img class="w-[12px] h-[12px]" src="/assets/tick.png" alt="tick">
+                    <div class="flex flex-row items-center gap-2">
+                      <p class="font-bold text-base">Stage:</p>
+                      <p>Presale</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- kemi and location -->
+              <div class="flex flex-row items-center justify-between">
+                <div class="flex flex-row items-center gap-2">
+                  <img class="w-[25px] h-[25px] rounded-full" src="/assets/dp.png" alt="dp">
+                  <p class="text-[#1D263A] font-bold">Kemi Adetiba</p>
+                </div>
+                <div class="flex flex-row items-center gap-2">
+                  <img src="/assets/location.png" alt="location">
+                  <p>Dubai, UAE</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Flint -->
+          <div
+            class="relative overflow-hidden scr flex flex-col w-full bg-[#FFFFFF] shadow-md shadow-[#8A869414] h-auto rounded-lg"
+          >
+            <!-- image -->
+
+            <img
+              class="w-auto h-[39%] object-cover object-center rounded-t-lg transition-all duration-300 ease-in-out hover:scale-[1.09]"
+              src="/assets/flint.png"
+              alt="king of the boys"
+            />
+
+            <!-- Description -->
+            <div class="flex flex-col gap-4 p-4">
+              <!-- head section -->
+              <div class="flex flex-row justify-between mt-4">
+                <div class="flex flex-col gap-4">
+                  <p class="w-28 flex items-center justify-center rounded-3xl h-auto border-[#FBA286] border-1 bg-[#46B2EF] p-1 text-[#FCFCFD] font-normal text-sm">Soap Opera</p>
+                  <p class="font-bold text-3xl">Flint</p>
+                </div>
+                <div class="flex flex-col items-center bg-[#FFD0B6A6] p-2 rounded-xl">
+                  <p class="font-bold text-2xl text-[#DC562B] pt-2">25</p>
+                  <p class="text-[#DC562B] text-xs">Days left</p>
+                </div>
+              </div>
+
+              <p class="text-[#545A66] font-light text-sm">
+                King of Boys follows the story of Alhaja Eniola Salami, a
+                businesswoman and philanthropist with a checkered past and a
+                promising political future.
+              </p>
+
+              <!-- fundraising goal -->
+              <div class="flex flex-row items-center mt-1 gap-4 border-b-[1px] pb-4 border-b-[#E8EEFD]">
+                <div>
+                  <img class="w-[40px] h-[40px]" src="/assets/funds.png" alt="funds icon">
                 </div>
                 <div >
                   <p class="font-light text-base text-[#777E90]">Fundraising Goal</p>
@@ -434,5 +1076,7 @@
         navLinks.classList.toggle("top-[15%]");
       };
     </script>
+
+    <script src="https://unpkg.com/taos@1.0.5/dist/taos.js"></script>
   </body>
 </html>
